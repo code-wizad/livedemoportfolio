@@ -53,10 +53,10 @@
 <body>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Panchankr</a>
-            <a class="nav-link text-white active ms-lg-5" href="#">Api</a>
-            <button class="navbar-toggler m-lg-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" role="link" aria-label="Navigationbar main home link">Panchankr</a>
+            <a class="nav-link text-white active ms-lg-5" href="#" role="link" aria-label="Navigationbar main current page link">Api</a>
+            <button class="navbar-toggler m-lg-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" role="button" aria-label="Navigationbar close button">
                 <span class="navbar-toggler-icon"></span>
             </button>
             
@@ -68,22 +68,27 @@
             <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#" role="link" aria-label="Navigationbar main home link in the sidebar menu list">Home</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#" role="link" aria-label="Navigationbar main profile link in the sidebar menu list">Profile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Profile</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#" role="link" aria-label="Navigationbar main contact link in the sidebar menu list">Contact</a>
                     </li>
                     
+                    
                 </ul>
+            </div>
+            <div class="offcanvas-body">
+                <hr class="border w-25 my-0 mx-auto">
+                <ul id="navbarmenusocialicons" class="d-flex justify-content-evenly align-items-center flex-grow-1cd">
+                      <li class="nav-item"><a class="nav-link" href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a></li>
+                      <li class="nav-item"><a class="nav-link" href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a></li>
+                      <li class="nav-item"><a class="nav-link" href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter-x"></i></a></li>
+                      <li class="nav-item"><a class="nav-link" href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-dribbble"></i></a></li>
+                      <li class="nav-item"><a class="nav-link" href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a></li>
+                  </ul>
             </div>
         </div>
         <ul id="navsocialicons" class="navbar-nav justify-content-center align-items-center flex-grow-1cd">
@@ -96,14 +101,14 @@
     </div>
 </nav>
 
-<section id="intro" class="bg-dark text-white">
+<section id="intro top" class="bg-dark text-white pt-5">
     <div class="container">
         <div class="row g-2">
-            <div class="col-md-6 bg-dark align-items-center">
-                   <h1 class="text-center">Panchan kr</h1>
+            <div class="col-md-6 bg-dark">
+                   <h1 class="text-center pt-5">Panchan kr</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas laborum facere ipsa dolores enim, maxime sunt deserunt. Aperiam impedit enim soluta. Nostrum debitis molestiae, accusantium deserunt sapiente minima rem consectetur aliquid dicta magni, iste dolores quia non veritatis quis at. Nisi fugiat deleniti totam dolore illum, itaque reiciendis sunt perspiciatis.</p>
                 <div class="d-lg-flex my-2 justify-content-evenly">
-                    <a href="#" class="btn btn-secondary d-sm-block my-2" role="button">This is abutton</a>
+                    <a href="#" class="btn btn-secondary d-sm-block my-2 me-lg-1" role="button">This is abutton</a>
                     <a href="#" class="btn btn-secondary d-sm-block my-2" role="button">This is abutton</a>
                 </div>
             </div>
@@ -175,30 +180,30 @@
     </div>
 </section>
 <!-- contact -->
-<section id="Contact" class="bg-dark text-white py-5">
+<section id="contact" class="bg-dark text-white py-5">
     <div class="container">
         <div class="row g-2 pb-5">
             <div class="col-sm-12 col-md-6">
                 <label for="inputEmail4" class="form-label">Email</label>
-              <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+              <input type="email" class="form-control" placeholder="enter your email" aria-label="Enter your First name in the Email">
             </div>
             <div class="col-sm-12 col-md-6">
                 <label for="inputEmail4" class="form-label">Last Name</label>
-              <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+              <input type="text" class="form-control" placeholder="Last name" aria-label="Enter your Last name in the Email">
             </div>
           </div>
           <!-- Text area -->
           <div class="row g-2">
             <div class="col">
+                <label for="textarea" class="form-label">Write about your project</label>
                 <div class="form-floating mb-3">
-                    <textarea class="form-control" placeholder="Write about yourr project" id="floatingTextarea2" style="height: 100px">write about your project and lets descous about it</textarea>
-                    <label for="floatingTextarea2">Write About Your projects</label>
+                    <textarea class="form-control" placeholder="Write about yourr project" id="floatingTextarea2" aria-label="Enter description about your project" style="height: 100px">write about your project and lets descous about it</textarea>
                   </div>
             </div>
           </div>
     </div>
 </section>
-<footer class="bg-dark text-white pb-5">
+<footer class="bg-dark text-white">
     <div class="container">
         <h3>footer</h3>
         <section id="footersocialicons" class="fs-4">
@@ -215,25 +220,35 @@
                 </div>
             </div>
         </section>
-        <section class="bg-dark pt-5">
-            <div class="container-fluid">
-
-           
+        <section class="bg-dark">
+            <div class="container-fluid">           
             <div class="row g-1">
                 <div class="col-12">
                     <p class="text-center px-3 py-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas culpa perspiciatis qui reprehenderit, aspernatur quos repellendus magnam illum odio tenetur, molestiae eius ipsa maxime et. Error impedit dolorum ex mollitia eligendi sequi voluptatem nemo nesciunt pariatur quisquam, temporibus expedita tempore exercitationem enim, perspiciatis corrupti!.</p>
                 </div>
                 <div class="col-12">
                     <ul class="navbar-nav d-flex flex-row justify-content-evenly m-0 pb-5">
-                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Profile</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                        <li class="nav-item"> <a class="nav-link" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" role="menuitem" aria-label="Navigationbar main home link">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" role="menuitem" aria-label="Navigationbar main contact link">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" role="menuitem" aria-label="Navigationbar main profile link">Profile</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" role="menuitem" aria-label="Navigationbar main contact link">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" role="menuitem" aria-label="Navigationbar main about link">About</a></li>
                     </ul>
                 </div>
             </div>
         </div>
+        </section>
+        <section id="upnav" class="bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="position-relative">
+                      <div class="position-absolute top-0 start-0">
+                        <a href="#top" class="nav-link" role="button" aria-label="go to the top of this page"><i class="bi bi-chevron-compact-up"></i></a>
+                    </div>
+                   </div>
+
+                </div>
+            </div>
         </section>
         <section class="bg-dark">
             <p class="text-center">&copy All Rights Reserved since 2023 - 2024</p>

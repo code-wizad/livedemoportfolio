@@ -1,0 +1,23 @@
+
+/* Remove outline and box-shadow for all buttons in all states */
+button,
+button:focus,
+button:active,
+button:hover,
+button:focus:active,
+button:focus:hover,
+button:visited,
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:hover,
+.navbar-toggler:focus:active,
+.navbar-toggler:focus:hover,
+.navbar-toggler:visited,
+.navbar-toggler-icon:focus,
+.navbar-toggler-icon:active,
+.navbar-toggler {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
